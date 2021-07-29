@@ -32,8 +32,8 @@
         "editor.background": "#141414",
         "sideBarSectionHeader.background": "#141414",
         "terminal.foreground" : "#00FD61",
-        "terminal.background" : "#111111"
-
+        "terminal.background" : "#111111",
+        "editorRuler.foreground": "#383335"
     },
     "editor.cursorSmoothCaretAnimation": true,
     "sync.gist": "",
@@ -45,8 +45,11 @@
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "editor.renderWhitespace": "none",
     "workbench.productIconTheme": "fluent-icons",
-    "workbench.sideBar.location": "right",
     "editor.lineDecorationsWidth": 10,
     "editor.glyphMargin": false,
     "editor.folding": false,
+    "editor.rulers": [
+        120
+    ],
+    "editor.cursorStyle": "underline-thin",
 }
