@@ -5,7 +5,7 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.iconTheme": "file-icons",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
     "diffEditor.ignoreTrimWhitespace": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "vim.statusBarColorControl": false,
@@ -14,18 +14,42 @@
     "[scss]": {
         "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
     },
-    "workbench.colorTheme": "Monokai Seti",
     "editor.cursorBlinking": "solid",
-    "editor.cursorStyle": "underline",
-    // "editor.formatOnSave": true,
     // "workbench.colorCustomizations": {
     //     "activityBar.background": "#141414",
     //     "editor.background": "#141414",
     //     "sideBarSectionHeader.background": "#141414",
     //     "sideBar.background": "#212121",
     // },
+    // "editor.lineNumbers": "relative",
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#eca82a",
-        "terminalCursor.foreground": "#eca82a"
-    }
+        "terminalCursor.foreground": "#eca82a",
+        "editor.selectionBackground": "#135564",
+        "editor.selectionHighlightBackground": "#135564",
+        "editor.findMatchBackground": "#135564", //Current SEARCH MATCH
+        "editor.findMatchHighlightBackground": "#135564", //Other SEARCH MATCHES
+        "editor.background": "#141414",
+        "sideBarSectionHeader.background": "#141414",
+        "terminal.foreground" : "#00FD61",
+        "terminal.background" : "#111111",
+        "editorRuler.foreground": "#383335"
+    },
+    "editor.cursorSmoothCaretAnimation": true,
+    "sync.gist": "",
+    "sync.forceUpload": true,
+    "sync.removeExtensions": false,
+    "sync.syncExtensions": false,
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.renderWhitespace": "none",
+    "workbench.productIconTheme": "fluent-icons",
+    "editor.lineDecorationsWidth": 10,
+    "editor.glyphMargin": false,
+    "editor.folding": false,
+    "editor.rulers": [
+        120
+    ],
+    "editor.cursorStyle": "underline-thin",
 }
