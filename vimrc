@@ -25,7 +25,7 @@ Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tComment'
 Plugin 'ZoomWin'
-" Plugin 'w0rp/ale'
+Plugin 'w0rp/ale'
 Plugin 'leafgarland/typescript-vim.git'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'itchyny/lightline.vim'
@@ -34,6 +34,8 @@ Plugin 'jparise/vim-graphql'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'terryma/vim-multiple-cursors' "CTRL + N for multiple cursors
+Plugin 'doums/darcula'
+
 
 " plugin from http://vim-scripts.org/vim/scripts.html --- Plugin 'L9'
 " Git plugin not hosted on GitHub --- Plugin 'git://git.wincent.com/command-t.git'
@@ -46,18 +48,22 @@ filetype indent on
 syntax enable
 
 " ---- CUSTOM SETTINGS -------
-colorscheme gruvbox
+colorscheme darcula
+" colorscheme iceberg
+set bg=light
 highlight Normal guibg=#090B18
-highlight NonText guibg=#090B18  
+highlight NonText guibg=#090B18
 
-
+"colorscheme molokai
 "----------------
+" for NERDTree position
+let g:NERDTreeWinPos = "right"
 
 " tagbar
 map <F6> :TagbarToggle <CR>
 
 map <F5> :NERDTreeToggle <CR>
-let g:NERDTreeWinSize=35
+let g:NERDTreeWinSize=40
 let NERDTreeShowHidden=1
 let NERDTreeShowBookmarks=1
 
@@ -77,8 +83,6 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
     \ 'AcceptSelection("v")': ['<cr>', '<RightMouse>'],
     \ }
-
-
 
 set number
 set showcmd
@@ -285,8 +289,20 @@ set clipboard^=unnamedplus
 
 hi Pmenu        ctermfg=white ctermbg=black gui=NONE guifg=white guibg=black
 hi PmenuSel     ctermfg=white ctermbg=blue gui=bold guifg=white guibg=purple
-call togglerb#map("<F9>")
 
-call togglerb#map("<F9>")
+let g:lightline = {
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename',
+      \ },
+      \ }
 
+function! LightlineFilename()
+  return &filetype ==# 'vimfiler' ? vimfiler#get_status_string() :
+        \ &filetype ==# 'unite' ? unite#get_status_string() :
+        \ &filetype ==# 'vimshell' ? vimshell#get_status_string() :
+        \ expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+endfunction
 
+let g:unite_force_overwrite_statusline = 0
+let g:vimfiler_force_overwrite_statusline = 0
+let g:vimshell_force_overwrite_statusline = 0
