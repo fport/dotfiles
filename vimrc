@@ -48,9 +48,7 @@ filetype indent on
 syntax enable
 
 " ---- CUSTOM SETTINGS -------
-colorscheme darcula
-" colorscheme iceberg
-set bg=light
+colorscheme iceberg
 highlight Normal guibg=#090B18
 highlight NonText guibg=#090B18
 
