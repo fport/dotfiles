@@ -34,7 +34,8 @@ Plugin 'jparise/vim-graphql'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'terryma/vim-multiple-cursors' "CTRL + N for multiple cursors
-Plugin 'doums/darcula'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'haishanh/night-owl.vim'
 
 
 " plugin from http://vim-scripts.org/vim/scripts.html --- Plugin 'L9'
@@ -304,3 +305,6 @@ endfunction
 let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline = 0
+
+nnoremap <leader>gv <C-W>v gd f" gf
+nnoremap gp :silent %!prettier --stdin-filepath %<CR>
