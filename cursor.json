@@ -1,0 +1,53 @@
+{
+    "symbols.hidesExplorerArrows": false,
+    "editor.formatOnSave": true,
+    "eslint.codeActionsOnSave.rules": null,
+    "[javascript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "gitlens.ai.experimental.provider": "openai",
+    "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+    "workbench.colorTheme": "One Dark Pro Monokai Darker",
+    "editor.minimap.enabled": false,
+    "editor.accessibilitySupport": "on",
+    "eslint.timeBudget.onValidation": {
+        "warn": 4000,
+        "error": 8000
+    },
+    "playwright.reuseBrowser": true,
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.combo.timerEnabled": "hide",
+    "powermode.shake.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "vim.statusBarColorControl": false,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "editor.cursorBlinking": "solid",
+    "editor.lineNumbers": "relative",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#eca82a",
+        "terminalCursor.foreground": "#eca82a",
+        "editor.selectionBackground": "#135564",
+        "editor.selectionHighlightBackground": "#135564",
+        "editor.findMatchBackground": "#135564", //Current SEARCH MATCH
+        "editor.findMatchHighlightBackground": "#135564", //Other SEARCH MATCHES
+        "editor.background": "#141414",
+        "sideBarSectionHeader.background": "#141414",
+        "terminal.foreground" : "#00FD61",
+        "terminal.background" : "#111111",
+        "editorRuler.foreground": "#383335"
+    },
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.renderWhitespace": "none",
+    "editor.glyphMargin": false,
+    "editor.folding": true,
+    "editor.rulers": [
+        120
+    ],
+    "editor.cursorStyle": "underline-thin",
+}
